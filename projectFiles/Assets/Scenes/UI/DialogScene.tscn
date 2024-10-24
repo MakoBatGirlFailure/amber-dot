@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://csrseroki6saj"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/DialogScene.gd" id="1_8lci2"]
+[ext_resource type="Texture2D" uid="uid://dth2opttupksk" path="res://Assets/Sprites/Background/background-dialogue.png" id="2_eovdo"]
+
+[node name="DialogObject" type="CanvasLayer"]
+script = ExtResource("1_8lci2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 576.75)
+scale = Vector2(1, 0.715311)
+texture = ExtResource("2_eovdo")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 48.0
+offset_top = 528.0
+offset_right = 1120.0
+offset_bottom = 624.0
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Texto aqui
+lalalalalala"
+scroll_active = false
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.004
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

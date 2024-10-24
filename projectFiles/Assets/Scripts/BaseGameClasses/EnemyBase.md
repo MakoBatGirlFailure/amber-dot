@@ -1,0 +1,3 @@
+# EnemyBase.gd
+
+# Methods

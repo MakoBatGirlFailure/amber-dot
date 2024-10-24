@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://cba3udrso5que"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/PlayerStatUI.gd" id="1_sewst"]
+
+[node name="PlayerStatUI" type="CanvasLayer"]
+script = ExtResource("1_sewst")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+modulate = Color(0.203922, 1, 1, 1)
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 375.0
+offset_bottom = 44.0
+
+[node name="ArmorBar" type="ProgressBar" parent="."]
+modulate = Color(1, 1, 0, 1)
+offset_left = 12.0
+offset_top = 113.0
+offset_right = 375.0
+offset_bottom = 151.0

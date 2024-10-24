@@ -1,0 +1,190 @@
+[gd_scene load_steps=35 format=3 uid="uid://bd6k2il0tabk7"]
+
+[ext_resource type="Texture2D" uid="uid://diaowu82i5a2v" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle1.png" id="1_nbjit"]
+[ext_resource type="Script" path="res://Assets/Scripts/Enemies/MeleeEnemy/MeleeEnemy.gd" id="1_resc0"]
+[ext_resource type="Texture2D" uid="uid://ceplx3jvhrrqv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle2.png" id="2_1cbjl"]
+[ext_resource type="Texture2D" uid="uid://bdup71wssupj1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash1.png" id="2_g8gem"]
+[ext_resource type="Script" path="res://Assets/Scripts/WallSensors.gd" id="2_rn56t"]
+[ext_resource type="Texture2D" uid="uid://de7vpwrw4atvk" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash2.png" id="3_4jjd6"]
+[ext_resource type="Texture2D" uid="uid://cp4vby470maim" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle3.png" id="3_dbavs"]
+[ext_resource type="Texture2D" uid="uid://06hpluet2hk5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle4.png" id="4_h0ygk"]
+[ext_resource type="Texture2D" uid="uid://ceish1d7jvb0n" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash3.png" id="4_hthml"]
+[ext_resource type="Texture2D" uid="uid://bxqu2wmapujjd" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash4.png" id="5_61oq6"]
+[ext_resource type="Texture2D" uid="uid://odcexhbwaxcb" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle5.png" id="5_x276o"]
+[ext_resource type="Texture2D" uid="uid://7stbc04bdhr" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash5.png" id="6_ly422"]
+[ext_resource type="Texture2D" uid="uid://kjuej80qbmqx" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle6.png" id="6_s2cys"]
+[ext_resource type="Texture2D" uid="uid://f10i25jrob42" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash6.png" id="7_n4ok1"]
+[ext_resource type="Texture2D" uid="uid://c06k0ll22gufo" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle7.png" id="7_y4i7n"]
+[ext_resource type="Texture2D" uid="uid://b7oqm3kua2utv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash7.png" id="8_apct0"]
+[ext_resource type="Texture2D" uid="uid://dn0aommccgqrm" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk4.png" id="9_3ot31"]
+[ext_resource type="Texture2D" uid="uid://c00457sjbdv2i" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash8.png" id="9_owdva"]
+[ext_resource type="Texture2D" uid="uid://q3jcbft7ha14" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk5.png" id="10_ley7d"]
+[ext_resource type="Texture2D" uid="uid://cy73om1qihf6n" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash9.png" id="10_seunb"]
+[ext_resource type="Texture2D" uid="uid://brp5hje75thpv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk6.png" id="11_4kjle"]
+[ext_resource type="Texture2D" uid="uid://cdkaeuc0pwpn3" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash10.png" id="11_7bs1a"]
+[ext_resource type="Texture2D" uid="uid://bygj86gbbvue1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash11.png" id="12_bo3lc"]
+[ext_resource type="Texture2D" uid="uid://bwhclpli7tvb" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk7.png" id="12_q4qtk"]
+[ext_resource type="Texture2D" uid="uid://bhhicej8bfdyl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash12.png" id="13_l8fvw"]
+[ext_resource type="Texture2D" uid="uid://bdgm3m3ngkon5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk8.png" id="13_lb0ba"]
+[ext_resource type="Texture2D" uid="uid://ctqajvwmdqhdo" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash13.png" id="14_q1vpr"]
+[ext_resource type="Texture2D" uid="uid://b3lhi8sq77ntw" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk9.png" id="14_r1d4q"]
+[ext_resource type="Texture2D" uid="uid://d0v5otvaf7l3u" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash14.png" id="15_c0mcs"]
+[ext_resource type="Texture2D" uid="uid://cr4i42hc7qk47" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk10.png" id="15_yr8mq"]
+[ext_resource type="Texture2D" uid="uid://ckrwhfsewot25" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk11.png" id="16_fv105"]
+[ext_resource type="Texture2D" uid="uid://dcx3di0tnj7c" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash15.png" id="16_rbkpu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4tnbv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_g8gem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4jjd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hthml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_61oq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ly422")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_n4ok1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_apct0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_owdva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_seunb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7bs1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_bo3lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l8fvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_q1vpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_c0mcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_rbkpu")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nbjit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1cbjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dbavs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h0ygk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x276o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s2cys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y4i7n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_3ot31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ley7d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4kjle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_q4qtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lb0ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_r1d4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_yr8mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fv105")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 11.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vo37e"]
+radius = 14.0
+height = 40.0
+
+[node name="TestEnemy" type="CharacterBody2D"]
+script = ExtResource("1_resc0")
+
+[node name="EnemyWallSensor" type="Node2D" parent="."]
+script = ExtResource("2_rn56t")
+
+[node name="Sensor1" type="RayCast2D" parent="EnemyWallSensor"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-15, 13)
+target_position = Vector2(-5, 0)
+
+[node name="Sensor2" type="RayCast2D" parent="EnemyWallSensor"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(15, 13)
+target_position = Vector2(5, 0)
+
+[node name="EnemyFloorSensor" type="Node2D" parent="."]
+script = ExtResource("2_rn56t")
+
+[node name="Sensor1" type="RayCast2D" parent="EnemyFloorSensor"]
+modulate = Color(0.4, 0, 1, 1)
+position = Vector2(14, 0)
+
+[node name="Sensor2" type="RayCast2D" parent="EnemyFloorSensor"]
+modulate = Color(0.4, 0, 1, 1)
+position = Vector2(-14, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0, 0.737255, 0.258824, 1)
+sprite_frames = SubResource("SpriteFrames_4tnbv")
+animation = &"attack"
+frame_progress = 0.190044
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 13)
+shape = SubResource("CapsuleShape2D_vo37e")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -84.0
+offset_top = -48.0
+offset_right = -4.0
+offset_bottom = -22.0
+text = "Distancia: "

@@ -1,0 +1,3 @@
+chara_color: red; text: Another dialogue message
+chara_color: green; text: The color can be changed
+chara_color: yellow; text: It can be improved in the future

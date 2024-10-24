@@ -1,0 +1,17 @@
+cs_anim_change actor_1 walk
+cs_move_actor actor_1 100
+cs_anim_change actor_1 talk
+cs_dialog dialogueTest
+cs_anim_change actor_1 idle
+cs_move_actor actor_1 200
+cs_anim_flip actor_1 1
+cs_actor_wait actor_1 1
+cs_anim_flip actor_1 0
+cs_actor_wait actor_1 1
+cs_camera_shake camera_1 15 3
+cs_anim_flip actor_1 1
+cs_actor_wait actor_1 1
+cs_anim_flip actor_1 0
+cs_anim_change actor_1 talk
+cs_dialog dialogue
+cs_anim_change actor_1 idle

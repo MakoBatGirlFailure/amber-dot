@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyhlsvcciquci"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/ConsoleSceneScript.gd" id="1_luogx"]
+
+[node name="Console" type="CanvasLayer"]
+visible = false
+script = ExtResource("1_luogx")
+
+[node name="Control" type="Control" parent="."]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+self_modulate = Color(0.964706, 0.964706, 0.964706, 1)
+z_index = 1
+layout_mode = 0
+offset_left = 9.0
+offset_top = 17.0
+offset_right = 500.0
+offset_bottom = 252.0
+bbcode_enabled = true
+scroll_following = true
+
+[node name="ColorRect" type="ColorRect" parent="Control/RichTextLabel"]
+z_index = 1
+layout_mode = 0
+offset_left = -9.0
+offset_top = -17.0
+offset_right = 500.0
+offset_bottom = 247.0
+color = Color(0.172549, 0.133333, 0.184314, 0.431373)
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 510.0
+offset_bottom = 315.0
+color = Color(0.141176, 0.211765, 0.188235, 1)
+
+[node name="LineEdit" type="LineEdit" parent="Control"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 263.0
+offset_right = 369.0
+offset_bottom = 294.0
+placeholder_text = "Insert command here:"
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 264.0
+offset_right = 496.0
+offset_bottom = 295.0
+text = "Execute"
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]

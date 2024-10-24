@@ -1,0 +1,643 @@
+[gd_scene load_steps=129 format=3 uid="uid://cs3ywu3vpt6tn"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/Player/PlayerBase.gd" id="1_ce4vp"]
+[ext_resource type="Texture2D" uid="uid://diaowu82i5a2v" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle1.png" id="1_fu42k"]
+[ext_resource type="Texture2D" uid="uid://csfnftqylrlco" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash1.png" id="2_1jvem"]
+[ext_resource type="Texture2D" uid="uid://ceplx3jvhrrqv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle2.png" id="2_qsyeb"]
+[ext_resource type="Texture2D" uid="uid://b4gttw4v6low1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash1.png" id="2_ti4bh"]
+[ext_resource type="Texture2D" uid="uid://wbn07d83tbod" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash2.png" id="3_7ud05"]
+[ext_resource type="Texture2D" uid="uid://cp4vby470maim" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle3.png" id="3_32p6i"]
+[ext_resource type="Texture2D" uid="uid://ble7tib2migeu" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash2.png" id="3_smbpo"]
+[ext_resource type="Texture2D" uid="uid://06hpluet2hk5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle4.png" id="4_faxe0"]
+[ext_resource type="Texture2D" uid="uid://bvbto73lvvx4y" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash3.png" id="4_hu6c4"]
+[ext_resource type="Texture2D" uid="uid://cvd0caxxrbjce" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash3.png" id="4_vyy4u"]
+[ext_resource type="Texture2D" uid="uid://dbqygwdkfsik" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash4.png" id="5_36sxn"]
+[ext_resource type="Texture2D" uid="uid://odcexhbwaxcb" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle5.png" id="5_afxi3"]
+[ext_resource type="Texture2D" uid="uid://dbta4e6e0xr82" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash4.png" id="5_wvngo"]
+[ext_resource type="Texture2D" uid="uid://gbtuygv55ibe" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash5.png" id="6_64gbr"]
+[ext_resource type="Texture2D" uid="uid://kjuej80qbmqx" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle6.png" id="6_dfwbf"]
+[ext_resource type="Texture2D" uid="uid://eibd7faa1ab2" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash5.png" id="6_e77fh"]
+[ext_resource type="Texture2D" uid="uid://cw5tuuaf45dpx" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash6.png" id="7_7v1qa"]
+[ext_resource type="Texture2D" uid="uid://c06k0ll22gufo" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/idle7.png" id="7_ec88e"]
+[ext_resource type="Texture2D" uid="uid://bubxvxlikfreq" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash6.png" id="7_wn0xs"]
+[ext_resource type="Texture2D" uid="uid://bpc13u0idrlwl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump8.png" id="8_5tqrp"]
+[ext_resource type="Texture2D" uid="uid://c67pwjddfobke" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash7.png" id="8_acw07"]
+[ext_resource type="Texture2D" uid="uid://dys35jqerlmju" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash7.png" id="8_kg1tq"]
+[ext_resource type="Texture2D" uid="uid://cfb5bm4we2kl5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/dash8.png" id="9_7oucn"]
+[ext_resource type="Texture2D" uid="uid://bkxecpk44hs55" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash8.png" id="9_b1r72"]
+[ext_resource type="Texture2D" uid="uid://bo2n0udftwqpt" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump9.png" id="9_c0qni"]
+[ext_resource type="Texture2D" uid="uid://b80h7tfkmrrir" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-fall-slash9.png" id="10_4o51c"]
+[ext_resource type="Texture2D" uid="uid://t0fllihtopnb" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump10.png" id="10_gwlpr"]
+[ext_resource type="Texture2D" uid="uid://8muvqsvwjiiy" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump11.png" id="11_173dg"]
+[ext_resource type="Texture2D" uid="uid://fl70c3amivia" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk1.png" id="12_ejj5v"]
+[ext_resource type="Texture2D" uid="uid://bdup71wssupj1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash1.png" id="13_2ujvl"]
+[ext_resource type="Texture2D" uid="uid://s50dvy6namsg" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk2.png" id="13_gwlrm"]
+[ext_resource type="Texture2D" uid="uid://de7vpwrw4atvk" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash2.png" id="14_nflvc"]
+[ext_resource type="Texture2D" uid="uid://dhbm56weqtmp" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk3.png" id="14_sqkr5"]
+[ext_resource type="Texture2D" uid="uid://dn0aommccgqrm" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk4.png" id="15_3p8x8"]
+[ext_resource type="Texture2D" uid="uid://ceish1d7jvb0n" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash3.png" id="15_b0fib"]
+[ext_resource type="Texture2D" uid="uid://q3jcbft7ha14" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk5.png" id="16_cjv83"]
+[ext_resource type="Texture2D" uid="uid://bxqu2wmapujjd" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash4.png" id="16_h0lg2"]
+[ext_resource type="Texture2D" uid="uid://brp5hje75thpv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk6.png" id="17_6n7mh"]
+[ext_resource type="Texture2D" uid="uid://7stbc04bdhr" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash5.png" id="17_7ai7f"]
+[ext_resource type="Texture2D" uid="uid://bwhclpli7tvb" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk7.png" id="18_0uv3k"]
+[ext_resource type="Texture2D" uid="uid://f10i25jrob42" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash6.png" id="18_41x1r"]
+[ext_resource type="Texture2D" uid="uid://f0ct5s6dwc5g" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash1.png" id="19_1sxjf"]
+[ext_resource type="Texture2D" uid="uid://bdgm3m3ngkon5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk8.png" id="19_b35gg"]
+[ext_resource type="Texture2D" uid="uid://b7oqm3kua2utv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash7.png" id="19_ob6td"]
+[ext_resource type="Texture2D" uid="uid://ge846eewy2f1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash2.png" id="20_4mbp0"]
+[ext_resource type="Texture2D" uid="uid://b3lhi8sq77ntw" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk9.png" id="20_lcl3i"]
+[ext_resource type="Texture2D" uid="uid://c00457sjbdv2i" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash8.png" id="20_udgpy"]
+[ext_resource type="Texture2D" uid="uid://cleb7tpikwe4c" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash3.png" id="21_7qe4b"]
+[ext_resource type="Texture2D" uid="uid://cr4i42hc7qk47" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk10.png" id="21_33pwh"]
+[ext_resource type="Texture2D" uid="uid://cy73om1qihf6n" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash9.png" id="21_72sbn"]
+[ext_resource type="Texture2D" uid="uid://cwkxw5h4tk5et" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash4.png" id="22_a3usp"]
+[ext_resource type="Texture2D" uid="uid://cdkaeuc0pwpn3" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash10.png" id="22_fabky"]
+[ext_resource type="Texture2D" uid="uid://ckrwhfsewot25" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/walk11.png" id="22_lv4pp"]
+[ext_resource type="Texture2D" uid="uid://tkx2o3qgsqek" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump1.png" id="23_c566f"]
+[ext_resource type="Texture2D" uid="uid://bygj86gbbvue1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash11.png" id="23_d5fd8"]
+[ext_resource type="Texture2D" uid="uid://cf40og8j5pqe2" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash5.png" id="23_u80o6"]
+[ext_resource type="Texture2D" uid="uid://bhhicej8bfdyl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash12.png" id="24_6chly"]
+[ext_resource type="Texture2D" uid="uid://d075r4frhpmdg" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash6.png" id="24_lcg5l"]
+[ext_resource type="Texture2D" uid="uid://dhpscxloc2xgl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump2.png" id="24_yh02a"]
+[ext_resource type="Texture2D" uid="uid://cfcqrqr12scuc" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump3.png" id="25_5sfyc"]
+[ext_resource type="Texture2D" uid="uid://ctqajvwmdqhdo" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash13.png" id="25_c57l8"]
+[ext_resource type="Texture2D" uid="uid://cxbh07otr7xdl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash7.png" id="25_vcmj7"]
+[ext_resource type="Texture2D" uid="uid://ctktv583bswwt" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump4.png" id="26_7fbe0"]
+[ext_resource type="Texture2D" uid="uid://dcvq85ml3rtpm" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash9.png" id="26_h7en6"]
+[ext_resource type="Texture2D" uid="uid://d0v5otvaf7l3u" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash14.png" id="26_qflwe"]
+[ext_resource type="Texture2D" uid="uid://dcx3di0tnj7c" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash15.png" id="27_2cxou"]
+[ext_resource type="Texture2D" uid="uid://dibrncsl48wn7" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash8.png" id="27_5a4hq"]
+[ext_resource type="Texture2D" uid="uid://c0e6jtxwo5lf8" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump5.png" id="27_y6kdq"]
+[ext_resource type="Texture2D" uid="uid://cec4ufhaufj4y" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-dash-jump6.png" id="28_cyeo3"]
+[ext_resource type="Texture2D" uid="uid://by32in8r64bld" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash10.png" id="28_dnv5n"]
+[ext_resource type="Texture2D" uid="uid://cpagyo22wwfl1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash16.png" id="28_goxb4"]
+[ext_resource type="Texture2D" uid="uid://580gfp1yg0gm" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-jump1.png" id="29_avb12"]
+[ext_resource type="Texture2D" uid="uid://cicqi2dxpqkrl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-hard-slash11.png" id="29_hwc35"]
+[ext_resource type="Texture2D" uid="uid://bqucoabg2o4my" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-combo-slash17.png" id="29_n515p"]
+[ext_resource type="Texture2D" uid="uid://2e77avfcirjd" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-jump2.png" id="30_epdre"]
+[ext_resource type="Texture2D" uid="uid://hn3fyyw4u4es" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-jump3.png" id="31_bngk8"]
+[ext_resource type="Texture2D" uid="uid://d2vy4kqpkqb55" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-jump4.png" id="32_imssb"]
+[ext_resource type="Texture2D" uid="uid://ga1pqp04p0kq" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump6.png" id="33_dchiy"]
+[ext_resource type="Texture2D" uid="uid://dfkyssayfuc8" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump5.png" id="34_yvcem"]
+[ext_resource type="Texture2D" uid="uid://c4l1j7tt8bjab" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/jump7.png" id="35_gpqfh"]
+[ext_resource type="Texture2D" uid="uid://de1ix5dai6d5a" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide1.png" id="36_6cojn"]
+[ext_resource type="Texture2D" uid="uid://cjy1hdnfuhqwj" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide2.png" id="37_3d3pd"]
+[ext_resource type="Texture2D" uid="uid://cg4b2s0jytoxy" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide3.png" id="38_u4vfh"]
+[ext_resource type="Texture2D" uid="uid://c1oeooelg2mmy" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide4.png" id="39_ihfoj"]
+[ext_resource type="Texture2D" uid="uid://1wuk6lh83ark" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide5.png" id="40_n7fnq"]
+[ext_resource type="Texture2D" uid="uid://bd16muemegf4t" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide6.png" id="41_523tr"]
+[ext_resource type="Texture2D" uid="uid://wpjrk6cv7ywo" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Without-Saber/wall-slide7.png" id="42_tdok6"]
+[ext_resource type="Texture2D" uid="uid://bqpasjjlahvo1" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash1.png" id="62_00u05"]
+[ext_resource type="Texture2D" uid="uid://bbjaoof7h7a6x" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash2.png" id="63_k3bca"]
+[ext_resource type="Texture2D" uid="uid://bhw7fm7bmv6sh" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash3.png" id="64_6p6g0"]
+[ext_resource type="Texture2D" uid="uid://1re34aw5tein" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash4.png" id="65_jua8s"]
+[ext_resource type="Texture2D" uid="uid://isworw1alt5h" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash5.png" id="66_vs1rf"]
+[ext_resource type="Texture2D" uid="uid://bkxjv32qtkwhc" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash6.png" id="67_sugs4"]
+[ext_resource type="Texture2D" uid="uid://cjft1y7rviwka" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash7.png" id="68_xxb5s"]
+[ext_resource type="Texture2D" uid="uid://cdjp3svh1fc53" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash8.png" id="69_xubuy"]
+[ext_resource type="Texture2D" uid="uid://bpdqxds54u37q" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash9.png" id="70_1pttj"]
+[ext_resource type="Texture2D" uid="uid://bxn3majekk440" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash10.png" id="71_8ifcs"]
+[ext_resource type="Texture2D" uid="uid://b0kbm5u2085bm" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash11.png" id="72_0ha3o"]
+[ext_resource type="Texture2D" uid="uid://b4xjpoc674uak" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-no-slash12.png" id="73_oexql"]
+[ext_resource type="Texture2D" uid="uid://dswntrgy61wgy" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash2.png" id="74_yp6ky"]
+[ext_resource type="Texture2D" uid="uid://h3rbd74m6l3y" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash3.png" id="75_nvpuc"]
+[ext_resource type="Texture2D" uid="uid://dyy7a4wm1v474" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash4.png" id="76_31hsu"]
+[ext_resource type="Texture2D" uid="uid://grvldr7gfmim" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash5.png" id="77_rw4wy"]
+[ext_resource type="Texture2D" uid="uid://bj1ufmuiavcso" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash6.png" id="78_kucey"]
+[ext_resource type="Texture2D" uid="uid://dj67nfcpqdie7" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash7.png" id="79_bgyd7"]
+[ext_resource type="Texture2D" uid="uid://k8g7twq5xvbh" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash8.png" id="80_plu4k"]
+[ext_resource type="Texture2D" uid="uid://co8ttybk1dfjw" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash9.png" id="81_sxt8t"]
+[ext_resource type="Texture2D" uid="uid://bem38b6s66iu8" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash10.png" id="82_mth0y"]
+[ext_resource type="Texture2D" uid="uid://cjia2r2n8u3re" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash11.png" id="83_g1s2c"]
+[ext_resource type="Texture2D" uid="uid://bw5wx6y6ugmq5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash12.png" id="84_gxpov"]
+[ext_resource type="Texture2D" uid="uid://cv7tirgbsbv2" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash13.png" id="85_blpsm"]
+[ext_resource type="Texture2D" uid="uid://ca6064gv6nbui" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-pre-slash14.png" id="86_ted0x"]
+[ext_resource type="Texture2D" uid="uid://rt6blum0ja2q" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash1.png" id="87_8ll35"]
+[ext_resource type="Texture2D" uid="uid://ba1gfkix17qpq" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash2.png" id="88_lvrs5"]
+[ext_resource type="Texture2D" uid="uid://qqp56omb4y0m" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash3.png" id="89_budvd"]
+[ext_resource type="Texture2D" uid="uid://djjl5btjqxso5" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash4.png" id="90_d5a2j"]
+[ext_resource type="Texture2D" uid="uid://gfx664rrn5cy" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash5.png" id="91_yr17u"]
+[ext_resource type="Texture2D" uid="uid://byqlfijk75lqv" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash6.png" id="92_oq5jv"]
+[ext_resource type="Texture2D" uid="uid://ckmt2tb15hsad" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash7.png" id="93_gtr83"]
+[ext_resource type="Texture2D" uid="uid://ds02q3nwgb37r" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash8.png" id="94_s1vws"]
+[ext_resource type="Texture2D" uid="uid://ql02nyfp8qld" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash9.png" id="95_c4i05"]
+[ext_resource type="Texture2D" uid="uid://o1qe2o0n4wgl" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash10.png" id="96_bkj6j"]
+[ext_resource type="Texture2D" uid="uid://ctu8xqf3j5h7x" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash11.png" id="97_is008"]
+[ext_resource type="Texture2D" uid="uid://b0evi1kge6prt" path="res://Assets/Sprites/Animation/Zero_Placeholder/Zero-Slash/saber-animation-zero-walk-slash12.png" id="98_l4qbp"]
+[ext_resource type="Script" path="res://Assets/Scripts/WallSensors.gd" id="126_tsk2f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p7jow"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1jvem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_smbpo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vyy4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_36sxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_64gbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7v1qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kg1tq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b1r72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4o51c")
+}],
+"loop": false,
+"name": &"air_slash",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ti4bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7ud05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hu6c4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wvngo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_e77fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wn0xs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_acw07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7oucn")
+}],
+"loop": false,
+"name": &"dashing",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_1sxjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_4mbp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7qe4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_a3usp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_u80o6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_lcg5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_vcmj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_h7en6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_5a4hq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dnv5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hwc35")
+}],
+"loop": false,
+"name": &"hard_slash",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fu42k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qsyeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_32p6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_faxe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_afxi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dfwbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ec88e")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_5tqrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_c0qni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gwlpr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_173dg")
+}],
+"loop": true,
+"name": &"jump_loop",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_2ujvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nflvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_b0fib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_h0lg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7ai7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_41x1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ob6td")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_udgpy")
+}],
+"loop": false,
+"name": &"slash_combo_1",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_udgpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_72sbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fabky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_d5fd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6chly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_c57l8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_qflwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_2cxou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_goxb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_n515p")
+}],
+"loop": false,
+"name": &"slash_combo_2",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_ejj5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gwlrm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_sqkr5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3p8x8")
+}],
+"loop": false,
+"name": &"start_walking",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_00u05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_k3bca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_6p6g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_jua8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_vs1rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_sugs4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_xxb5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_xubuy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_1pttj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_8ifcs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_0ha3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_oexql")
+}],
+"loop": false,
+"name": &"walk_post_slash",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("74_yp6ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_nvpuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_31hsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_rw4wy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_kucey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_bgyd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_plu4k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_sxt8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_mth0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_g1s2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_gxpov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_blpsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_ted0x")
+}],
+"loop": false,
+"name": &"walk_pre_slash",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("87_8ll35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_lvrs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_budvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_d5a2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_yr17u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_oq5jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_gtr83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_s1vws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_c4i05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_bkj6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_is008")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_l4qbp")
+}],
+"loop": false,
+"name": &"walk_slash",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_3p8x8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_cjv83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6n7mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_0uv3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_b35gg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_lcl3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_33pwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_lv4pp")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_c566f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_yh02a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_5sfyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7fbe0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_y6kdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_cyeo3")
+}],
+"loop": false,
+"name": &"wall_dash_jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_y6kdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_cyeo3")
+}],
+"loop": true,
+"name": &"wall_dash_jump_loop",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_avb12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_epdre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_bngk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_imssb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_imssb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dchiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_yvcem")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_gpqfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5tqrp")
+}],
+"loop": false,
+"name": &"wall_jump",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_6cojn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_3d3pd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_u4vfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ihfoj")
+}],
+"loop": false,
+"name": &"wall_slide",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_ihfoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_n7fnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_523tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_tdok6")
+}],
+"loop": true,
+"name": &"wall_slide_loop",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ptllv"]
+radius = 13.0
+height = 44.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_mask = 3
+script = ExtResource("1_ce4vp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_p7jow")
+animation = &"walk_slash"
+frame = 11
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 10)
+shape = SubResource("CapsuleShape2D_ptllv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="Sensors" type="Node2D" parent="."]
+script = ExtResource("126_tsk2f")
+
+[node name="Sensor1" type="RayCast2D" parent="Sensors"]
+position = Vector2(0, 11)
+target_position = Vector2(52, 0)
+
+[node name="Sensor2" type="RayCast2D" parent="Sensors"]
+position = Vector2(0, 11)
+target_position = Vector2(-53, 0)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
